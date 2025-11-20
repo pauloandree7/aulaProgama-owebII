@@ -1,0 +1,39 @@
+/* ===============================
+   FORMULÁRIOS
+   =============================== */
+
+form {
+    background: var(--cor-fundo-claro);
+    padding: var(--esp-4);
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: var(--esp-1);
+    font-size: var(--font-sm);
+}
+
+input,
+select {
+    width: 100%;
+    padding: var(--esp-2);
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    color: var(--cor-texto);
+    margin-bottom: var(--esp-3);
+}
+
+input:focus {
+    border-color: var(--cor-primaria);
+}
+
+/* VALIDAÇÃO */
+input:invalid {
+    border-color: var(--cor-alerta);
+}
+
+input:valid {
+    border-color: var(--cor-sucesso);
+}

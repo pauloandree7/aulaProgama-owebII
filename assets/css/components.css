@@ -1,0 +1,71 @@
+/* ===============================
+   COMPONENTES
+   =============================== */
+
+/* CARDS */
+.card {
+    background: var(--cor-fundo-claro);
+    border: 1px solid var(--cor-borda);
+    padding: var(--esp-3);
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* BOTÕES */
+.btn {
+    background: var(--cor-primaria);
+    color: white;
+    padding: var(--esp-2) var(--esp-3);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0f74d4;
+}
+
+.btn:active {
+    background: #0a4a8e;
+}
+
+.btn:disabled {
+    background: #333;
+    cursor: not-allowed;
+}
+
+/* ALERTAS */
+.alert {
+    padding: var(--esp-2);
+    border-radius: 6px;
+    margin-bottom: var(--esp-3);
+}
+
+.alert-sucesso {
+    background: var(--cor-sucesso);
+    color: #fff;
+}
+
+.alert-erro {
+    background: var(--cor-alerta);
+    color: #fff;
+}
+
+.alert-info {
+    background: var(--cor-info);
+    color: #fff;
+}
+
+/* TAGS/CATEGORIAS */
+.tag {
+    display: inline-block;
+    background: var(--cor-secundaria);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: var(--font-sm);
+    margin-right: var(--esp-1);
+}

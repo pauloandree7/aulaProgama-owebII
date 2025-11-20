@@ -1,0 +1,47 @@
+/* ===============================
+   LAYOUT PRINCIPAL
+   =============================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* GRID DE 12 COLUNAS */
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--esp-3);
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    .grid-12 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-12 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-12 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-12 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-12 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
